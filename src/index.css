@@ -1,13 +1,175 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+*, *::before, *::after{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    width: 100%;
+    display: flex;
+    padding: 2rem;
+    background-color: #000;
+    /*border:  2px solid red; */
+}
+img{
+    width: 1.1rem;
+    height: 1.1rem;
+}
+nav h2{
+    color: #fff;
+    margin-left: 5rem;
+    /*margin-bottom: 1rem;*/
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*a{
+    text-decoration: none;
+    font-weight: 900;
+    color: black;
+}*/
+#container{
+    /* border:  2px solid red; */
+    background-color: #e5e5e5;
+    margin: 120px auto;
+    width: 60vw;
+    border: 2px solid rgb(56, 56, 133);
+    padding: 4rem;
 }
+#container h1{
+    text-align: center;
+    /* border:  1px solid black; */
+    padding: 20px;
+    color: red;
+    background-color: #000;
+}
+p{
+    text-align: center;
+    margin-top: 1rem;
+}
+ h3{
+    margin-top: 1rem;
+}
+form{
+    /* border: 2px solid green; */
+    width: 400px;
+    margin: auto;
+}
+
+form input[type="text"]{
+    /* border: 1px solid red; */
+    width: 110%;
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+    margin: 10px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 2px solid black;
+    outline: 0;
+    font-size: 1.1rem;
+     overflow: scroll;
+}
+
+
+.btn button{
+    /* border: 1px solid red; */
+    display: inline-block;
+    width: 9.2rem;
+    margin-left: 20rem;
+    outline: 0;
+    padding: 10px;
+    background:#000;
+    color:  #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    border: 0px outset darkred;
+    border-radius: 1rem;
+    box-shadow:  5px 10px 18px #888888;
+}
+
+ /*.btn{
+    display: flex;
+    justify-content: space-between;
+ }*/
+ /*.btn #answerBtn{
+    margin-left: 16px;
+ }*/
+
+.form-group{
+    margin: 20px;
+    /* border: 1px solid red; */
+}
+.form-group span{
+    display: inline-block;
+    /* border: 1px solid red;    */
+
+}
+
+ /*  media query for tablet*/
+@media all and (max-width: 768px){
+    nav{
+        height: 4rem;
+    }
+    nav h2{
+        margin-top: -0.5rem;
+    }
+    #container{
+         width: 90vw;
+         margin: 70px auto;
+    }
+    
+}
+    @media all and (max-width: 425px){
+      #container{
+         width: 100vw;
+         margin: 70px auto;
+    }
+    div #answerBtn{
+      margin-right: 4rem;
+     }
+      form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    form input[type="text"]{
+    width: 80%;   
+   }
+   div #answerBtn{
+    margin-left: 4rem;
+   }
+}
+ @media all and (max-width: 375px){
+  /* #container{
+         width: 100vw;
+         margin: 70px auto;
+    }*/
+    form input[type="text"]{
+    width: 60%;   
+   } 
+    div #answerBtn{
+    margin-left: 3rem;
+   }
+
+ }
+
+ @media all and (max-width: 320px){
+    nav h2{
+     font-size: 1.2rem;
+    }
+    nav{
+      width: 100%;
+    }
+    /* #container{
+      width: 120vw;
+      margin: auto;
+    } */
+    form input[type="text"]{
+    width: 50%;   
+   } 
+   div #answerBtn{
+    margin-right: 10rem;
+   }
+ }
